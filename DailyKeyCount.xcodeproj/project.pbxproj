@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADDD3E0A1C5FFF43002F7D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */; };
+		ADDD3E0C1C5FFF43002F7D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */; };
+		ADDD3E0F1C5FFF43002F7D1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */; };
+		ADDD3E1A1C5FFF43002F7D1C /* DailyKeyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E191C5FFF43002F7D1C /* DailyKeyCountTests.swift */; };
+		ADDD3E251C5FFF43002F7D1C /* DailyKeyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E241C5FFF43002F7D1C /* DailyKeyCountUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADDD3E161C5FFF43002F7D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDD3DFE1C5FFF43002F7D1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADDD3E051C5FFF43002F7D1C;
+			remoteInfo = DailyKeyCount;
+		};
+		ADDD3E211C5FFF43002F7D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDD3DFE1C5FFF43002F7D1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADDD3E051C5FFF43002F7D1C;
+			remoteInfo = DailyKeyCount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADDD3E061C5FFF43002F7D1C /* DailyKeyCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyKeyCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADDD3E0E1C5FFF43002F7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ADDD3E101C5FFF43002F7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADDD3E151C5FFF43002F7D1C /* DailyKeyCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyKeyCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDD3E191C5FFF43002F7D1C /* DailyKeyCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyKeyCountTests.swift; sourceTree = "<group>"; };
+		ADDD3E1B1C5FFF43002F7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADDD3E201C5FFF43002F7D1C /* DailyKeyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyKeyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDD3E241C5FFF43002F7D1C /* DailyKeyCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyKeyCountUITests.swift; sourceTree = "<group>"; };
+		ADDD3E261C5FFF43002F7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADDD3E031C5FFF43002F7D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E121C5FFF43002F7D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E1D1C5FFF43002F7D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADDD3DFD1C5FFF43002F7D1C = {
+			isa = PBXGroup;
+			children = (
+				ADDD3E081C5FFF43002F7D1C /* DailyKeyCount */,
+				ADDD3E181C5FFF43002F7D1C /* DailyKeyCountTests */,
+				ADDD3E231C5FFF43002F7D1C /* DailyKeyCountUITests */,
+				ADDD3E071C5FFF43002F7D1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADDD3E071C5FFF43002F7D1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD3E061C5FFF43002F7D1C /* DailyKeyCount.app */,
+				ADDD3E151C5FFF43002F7D1C /* DailyKeyCountTests.xctest */,
+				ADDD3E201C5FFF43002F7D1C /* DailyKeyCountUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADDD3E081C5FFF43002F7D1C /* DailyKeyCount */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */,
+				ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */,
+				ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */,
+				ADDD3E101C5FFF43002F7D1C /* Info.plist */,
+			);
+			path = DailyKeyCount;
+			sourceTree = "<group>";
+		};
+		ADDD3E181C5FFF43002F7D1C /* DailyKeyCountTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD3E191C5FFF43002F7D1C /* DailyKeyCountTests.swift */,
+				ADDD3E1B1C5FFF43002F7D1C /* Info.plist */,
+			);
+			path = DailyKeyCountTests;
+			sourceTree = "<group>";
+		};
+		ADDD3E231C5FFF43002F7D1C /* DailyKeyCountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD3E241C5FFF43002F7D1C /* DailyKeyCountUITests.swift */,
+				ADDD3E261C5FFF43002F7D1C /* Info.plist */,
+			);
+			path = DailyKeyCountUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADDD3E051C5FFF43002F7D1C /* DailyKeyCount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADDD3E291C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCount" */;
+			buildPhases = (
+				ADDD3E021C5FFF43002F7D1C /* Sources */,
+				ADDD3E031C5FFF43002F7D1C /* Frameworks */,
+				ADDD3E041C5FFF43002F7D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyKeyCount;
+			productName = DailyKeyCount;
+			productReference = ADDD3E061C5FFF43002F7D1C /* DailyKeyCount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADDD3E141C5FFF43002F7D1C /* DailyKeyCountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADDD3E2C1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountTests" */;
+			buildPhases = (
+				ADDD3E111C5FFF43002F7D1C /* Sources */,
+				ADDD3E121C5FFF43002F7D1C /* Frameworks */,
+				ADDD3E131C5FFF43002F7D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADDD3E171C5FFF43002F7D1C /* PBXTargetDependency */,
+			);
+			name = DailyKeyCountTests;
+			productName = DailyKeyCountTests;
+			productReference = ADDD3E151C5FFF43002F7D1C /* DailyKeyCountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADDD3E1F1C5FFF43002F7D1C /* DailyKeyCountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADDD3E2F1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountUITests" */;
+			buildPhases = (
+				ADDD3E1C1C5FFF43002F7D1C /* Sources */,
+				ADDD3E1D1C5FFF43002F7D1C /* Frameworks */,
+				ADDD3E1E1C5FFF43002F7D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADDD3E221C5FFF43002F7D1C /* PBXTargetDependency */,
+			);
+			name = DailyKeyCountUITests;
+			productName = DailyKeyCountUITests;
+			productReference = ADDD3E201C5FFF43002F7D1C /* DailyKeyCountUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADDD3DFE1C5FFF43002F7D1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LateRain;
+				TargetAttributes = {
+					ADDD3E051C5FFF43002F7D1C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ADDD3E141C5FFF43002F7D1C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ADDD3E051C5FFF43002F7D1C;
+					};
+					ADDD3E1F1C5FFF43002F7D1C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ADDD3E051C5FFF43002F7D1C;
+					};
+				};
+			};
+			buildConfigurationList = ADDD3E011C5FFF43002F7D1C /* Build configuration list for PBXProject "DailyKeyCount" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADDD3DFD1C5FFF43002F7D1C;
+			productRefGroup = ADDD3E071C5FFF43002F7D1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADDD3E051C5FFF43002F7D1C /* DailyKeyCount */,
+				ADDD3E141C5FFF43002F7D1C /* DailyKeyCountTests */,
+				ADDD3E1F1C5FFF43002F7D1C /* DailyKeyCountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADDD3E041C5FFF43002F7D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDD3E0C1C5FFF43002F7D1C /* Assets.xcassets in Resources */,
+				ADDD3E0F1C5FFF43002F7D1C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E131C5FFF43002F7D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E1E1C5FFF43002F7D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADDD3E021C5FFF43002F7D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDD3E0A1C5FFF43002F7D1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E111C5FFF43002F7D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDD3E1A1C5FFF43002F7D1C /* DailyKeyCountTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDD3E1C1C5FFF43002F7D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDD3E251C5FFF43002F7D1C /* DailyKeyCountUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADDD3E171C5FFF43002F7D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADDD3E051C5FFF43002F7D1C /* DailyKeyCount */;
+			targetProxy = ADDD3E161C5FFF43002F7D1C /* PBXContainerItemProxy */;
+		};
+		ADDD3E221C5FFF43002F7D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADDD3E051C5FFF43002F7D1C /* DailyKeyCount */;
+			targetProxy = ADDD3E211C5FFF43002F7D1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADDD3E0E1C5FFF43002F7D1C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADDD3E271C5FFF43002F7D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADDD3E281C5FFF43002F7D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ADDD3E2A1C5FFF43002F7D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADDD3E2B1C5FFF43002F7D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADDD3E2D1C5FFF43002F7D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyKeyCount.app/Contents/MacOS/DailyKeyCount";
+			};
+			name = Debug;
+		};
+		ADDD3E2E1C5FFF43002F7D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyKeyCount.app/Contents/MacOS/DailyKeyCount";
+			};
+			name = Release;
+		};
+		ADDD3E301C5FFF43002F7D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DailyKeyCount;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ADDD3E311C5FFF43002F7D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DailyKeyCountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DailyKeyCount;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADDD3E011C5FFF43002F7D1C /* Build configuration list for PBXProject "DailyKeyCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDD3E271C5FFF43002F7D1C /* Debug */,
+				ADDD3E281C5FFF43002F7D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADDD3E291C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDD3E2A1C5FFF43002F7D1C /* Debug */,
+				ADDD3E2B1C5FFF43002F7D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADDD3E2C1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDD3E2D1C5FFF43002F7D1C /* Debug */,
+				ADDD3E2E1C5FFF43002F7D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADDD3E2F1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDD3E301C5FFF43002F7D1C /* Debug */,
+				ADDD3E311C5FFF43002F7D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADDD3DFE1C5FFF43002F7D1C /* Project object */;
+}
