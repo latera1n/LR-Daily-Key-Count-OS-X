@@ -12,6 +12,8 @@
 		ADDD3E0F1C5FFF43002F7D1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */; };
 		ADDD3E1A1C5FFF43002F7D1C /* DailyKeyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E191C5FFF43002F7D1C /* DailyKeyCountTests.swift */; };
 		ADDD3E251C5FFF43002F7D1C /* DailyKeyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E241C5FFF43002F7D1C /* DailyKeyCountUITests.swift */; };
+		ADDD3E341C600382002F7D1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E321C600382002F7D1C /* MainViewController.swift */; };
+		ADDD3E351C600382002F7D1C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E331C600382002F7D1C /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		ADDD3E201C5FFF43002F7D1C /* DailyKeyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyKeyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDD3E241C5FFF43002F7D1C /* DailyKeyCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyKeyCountUITests.swift; sourceTree = "<group>"; };
 		ADDD3E261C5FFF43002F7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADDD3E321C600382002F7D1C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ADDD3E331C600382002F7D1C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */,
 				ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */,
 				ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */,
+				ADDD3E321C600382002F7D1C /* MainViewController.swift */,
+				ADDD3E331C600382002F7D1C /* MainViewController.xib */,
 				ADDD3E101C5FFF43002F7D1C /* Info.plist */,
 			);
 			path = DailyKeyCount;
@@ -225,6 +231,7 @@
 			files = (
 				ADDD3E0C1C5FFF43002F7D1C /* Assets.xcassets in Resources */,
 				ADDD3E0F1C5FFF43002F7D1C /* MainMenu.xib in Resources */,
+				ADDD3E351C600382002F7D1C /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDD3E0A1C5FFF43002F7D1C /* AppDelegate.swift in Sources */,
+				ADDD3E341C600382002F7D1C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +479,7 @@
 				ADDD3E2B1C5FFF43002F7D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADDD3E2C1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				ADDD3E2E1C5FFF43002F7D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADDD3E2F1C5FFF43002F7D1C /* Build configuration list for PBXNativeTarget "DailyKeyCountUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +497,7 @@
 				ADDD3E311C5FFF43002F7D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
