@@ -43,12 +43,5 @@ class MainViewController: NSViewController {
             return nil
         }
     }
-    
-    @IBAction func quitButtonPressed(sender: AnyObject) {
-        if !self.isQuitButtonPressedOnce {
-            self.isQuitButtonPressedOnce = true
-        } else {
-            NSApplication.sharedApplication().terminate(sender)
-        }
-    }
+
 }

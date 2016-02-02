@@ -12,18 +12,22 @@ import AppKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    @IBOutlet weak var mainMenu: NSMenu!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let popover = NSPopover()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         if let menuBarButton = statusItem.button {
+            menuBarButton.target = self
             menuBarButton.image = NSImage(named: "menu-bar-icon")
-            menuBarButton.action = Selector("togglePopover:")
         }
+        popover.behavior = NSPopoverBehavior.Transient
         popover.contentViewController = MainViewController(nibName: "MainViewController", bundle: nil)
-        togglePopover(nil)
-        togglePopover(nil)
+        statusItem.action = Selector("togglePopups:")
+        statusItem.sendActionOn(Int((NSEventMask.LeftMouseDownMask.rawValue | NSEventMask.RightMouseDownMask.rawValue)))
+        showPopover(nil)
+        closePopover(nil)
     }
     
     func showPopover(sender: AnyObject?) {
@@ -36,14 +40,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.performClose(sender)
     }
     
-    func togglePopover(sender: AnyObject?) {
-        if popover.shown {
-            closePopover(sender)
+    func togglePopups(sender: AnyObject?) {
+        let event:NSEvent! = NSApp.currentEvent!
+        if event.type == NSEventType.LeftMouseDown {
+            if popover.shown {
+                closePopover(sender)
+            } else {
+                showPopover(sender)
+            }
         } else {
-            showPopover(sender)
+            statusItem.popUpStatusItemMenu(self.mainMenu)
         }
     }
-
+    
+    @IBAction func quitApp(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(sender)
+    }
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }

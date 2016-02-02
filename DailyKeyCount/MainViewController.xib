@@ -8,8 +8,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MainVIewController" customModule="DailyKeyCount" customModuleProvider="target">
             <connections>
                 <outlet property="keyCountLabel" destination="syi-i9-Ygp" id="uf9-DE-C9O"/>
-                <outlet property="quitButton" destination="L0Y-6B-tvK" id="JaT-Vf-3sa"/>
-                <outlet property="quitButtonPressed" destination="cvx-Ae-dxk" id="5D6-vf-vQW"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -27,16 +25,6 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L0Y-6B-tvK">
-                    <rect key="frame" x="186" y="3" width="50" height="32"/>
-                    <buttonCell key="cell" type="push" title="Q" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cvx-Ae-dxk">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="systemLight" size="13"/>
-                        <connections>
-                            <action selector="quitButtonPressed:" target="-2" id="Hhg-i3-Lzu"/>
-                        </connections>
-                    </buttonCell>
-                </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="syi-i9-Ygp">
                     <rect key="frame" x="8" y="56" width="223" height="39"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0" id="bWY-m2-837">
@@ -47,12 +35,9 @@
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="L0Y-6B-tvK" firstAttribute="top" secondItem="syi-i9-Ygp" secondAttribute="bottom" constant="25" id="1Zg-xQ-BZB"/>
                 <constraint firstItem="syi-i9-Ygp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="EJp-BE-c7e"/>
                 <constraint firstItem="3n1-lA-qjD" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="InW-X8-alv"/>
                 <constraint firstItem="syi-i9-Ygp" firstAttribute="top" secondItem="3n1-lA-qjD" secondAttribute="bottom" constant="28" id="JWm-6W-gFF"/>
-                <constraint firstAttribute="trailing" secondItem="L0Y-6B-tvK" secondAttribute="trailing" constant="10" id="dMo-S6-zRS"/>
-                <constraint firstAttribute="bottom" secondItem="L0Y-6B-tvK" secondAttribute="bottom" constant="10" id="h70-qe-l7P"/>
                 <constraint firstAttribute="trailing" secondItem="syi-i9-Ygp" secondAttribute="trailing" constant="11" id="jPA-IL-SGy"/>
                 <constraint firstItem="3n1-lA-qjD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="o2C-LV-Jqy"/>
             </constraints>
