@@ -4,8 +4,8 @@ A simple OS X app that counts everyday's keystrokes
 <img src="./screenshot.png" width="300px"/>
 
 ### Download
-* Download the [app][app]
-[app]: ./DailyKeyCount-0.1.app.zip
+* [Download the app][app] - Version 0.1
+[app]: ./DailyKeyCount-0.1.app.zip?raw=true
 
 ### Usage
 __Note: You will need to add this app to the Accessbility whitelist to make it work properly.__
