@@ -1,7 +1,7 @@
 # LR-Daily-Key-Count-OS-X
 A simple OS X app that counts keystrokes system-wide
 
-<img src="./screenshot.png" width="300px"/>
+<img src="./screenshot.png" width="660px"/>
 
 ### Download
 * [Download the app][app] - Version 0.1.1
