@@ -4,7 +4,7 @@ A simple OS X app that counts keystrokes system-wide
 <img src="./screenshot.png" width="300px"/>
 
 ### Download
-* [Download the app][app] - Version 0.1
+* [Download the app][app] - Version 0.1.1
 [app]: ./DailyKeyCount-0.1.1.app.zip?raw=true
 
 ### Usage
