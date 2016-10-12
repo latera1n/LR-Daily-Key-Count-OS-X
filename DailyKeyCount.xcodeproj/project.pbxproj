@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9598E61DADF3A70004EF7A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9598E51DADF3A70004EF7A /* ServiceManagement.framework */; };
 		ADDD3E0A1C5FFF43002F7D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */; };
 		ADDD3E0C1C5FFF43002F7D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */; };
 		ADDD3E0F1C5FFF43002F7D1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD3E0D1C5FFF43002F7D1C /* MainMenu.xib */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD9598E51DADF3A70004EF7A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		ADDD3E061C5FFF43002F7D1C /* DailyKeyCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyKeyCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDD3E091C5FFF43002F7D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADDD3E0B1C5FFF43002F7D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9598E61DADF3A70004EF7A /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD9598E41DADF3A70004EF7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD9598E51DADF3A70004EF7A /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADDD3DFD1C5FFF43002F7D1C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				ADDD3E181C5FFF43002F7D1C /* DailyKeyCountTests */,
 				ADDD3E231C5FFF43002F7D1C /* DailyKeyCountUITests */,
 				ADDD3E071C5FFF43002F7D1C /* Products */,
+				AD9598E41DADF3A70004EF7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,18 +200,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = LateRain;
 				TargetAttributes = {
 					ADDD3E051C5FFF43002F7D1C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4CD459P4B2;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					ADDD3E141C5FFF43002F7D1C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = ADDD3E051C5FFF43002F7D1C;
 					};
 					ADDD3E1F1C5FFF43002F7D1C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = ADDD3E051C5FFF43002F7D1C;
 					};
 				};
@@ -317,8 +339,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -361,8 +385,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -381,6 +407,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -388,11 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4CD459P4B2;
 				INFOPLIST_FILE = DailyKeyCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCount;
+				PRODUCT_BUNDLE_IDENTIFIER = io.laterain.DailyKeyCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -400,11 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4CD459P4B2;
 				INFOPLIST_FILE = DailyKeyCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCount;
+				PRODUCT_BUNDLE_IDENTIFIER = io.laterain.DailyKeyCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -417,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyKeyCount.app/Contents/MacOS/DailyKeyCount";
 			};
 			name = Debug;
@@ -430,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyKeyCount.app/Contents/MacOS/DailyKeyCount";
 			};
 			name = Release;
@@ -442,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DailyKeyCount;
 				USES_XCTRUNNER = YES;
 			};
@@ -455,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.laterain.DailyKeyCountUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DailyKeyCount;
 				USES_XCTRUNNER = YES;
 			};

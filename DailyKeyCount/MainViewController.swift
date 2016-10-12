@@ -20,26 +20,30 @@ class MainViewController: NSViewController {
         // Do view setup here.
         
         var normalKeyCount: Int64 = 0;
-        var specialKeyCount: Int64 = 0;
+        let specialKeyCount: Int64 = 0;
         
-        keyCountLabel.font = NSFont.monospacedDigitSystemFontOfSize(32, weight: NSFontWeightThin)
+        keyCountLabel.font = NSFont.monospacedDigitSystemFont(ofSize: 32, weight: NSFontWeightThin)
         
-        let numberFormatter = NSNumberFormatter()
-        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         
-        NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.KeyDownMask) { (event: NSEvent) -> Void in
-            self.keyCountLabel.stringValue = numberFormatter.stringFromNumber(NSNumber(longLong: ++normalKeyCount + specialKeyCount / 2))!
+        NSEvent.addGlobalMonitorForEvents(matching: NSEventMask.keyDown) { (event: NSEvent) -> Void in
+            normalKeyCount += 1
+            self.keyCountLabel.stringValue = numberFormatter.string(from: NSNumber(value: normalKeyCount + specialKeyCount / 2 as Int64))!
         }
-        NSEvent.addLocalMonitorForEventsMatchingMask(NSEventMask.KeyDownMask) { (evet: NSEvent) -> NSEvent? in
-            self.keyCountLabel.stringValue = numberFormatter.stringFromNumber(NSNumber(longLong: ++normalKeyCount + specialKeyCount / 2))!
+        NSEvent.addLocalMonitorForEvents(matching: NSEventMask.keyDown) { (evet: NSEvent) -> NSEvent? in
+            normalKeyCount += 1
+            self.keyCountLabel.stringValue = numberFormatter.string(from: NSNumber(value: normalKeyCount + specialKeyCount / 2 as Int64))!
             return nil
         }
         
-        NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.FlagsChangedMask) { (event: NSEvent) -> Void in
-            self.keyCountLabel.stringValue = numberFormatter.stringFromNumber(NSNumber(longLong: normalKeyCount + (++specialKeyCount + 1) / 2))!
+        NSEvent.addGlobalMonitorForEvents(matching: NSEventMask.flagsChanged) { (event: NSEvent) -> Void in
+            normalKeyCount += 1
+            self.keyCountLabel.stringValue = numberFormatter.string(from: NSNumber(value: normalKeyCount + (specialKeyCount + 1) / 2 as Int64))!
         }
-        NSEvent.addLocalMonitorForEventsMatchingMask(NSEventMask.FlagsChangedMask) { (evet: NSEvent) -> NSEvent? in
-            self.keyCountLabel.stringValue = numberFormatter.stringFromNumber(NSNumber(longLong: normalKeyCount + (++specialKeyCount + 1) / 2))!
+        NSEvent.addLocalMonitorForEvents(matching: NSEventMask.flagsChanged) { (evet: NSEvent) -> NSEvent? in
+            normalKeyCount += 1
+            self.keyCountLabel.stringValue = numberFormatter.string(from: NSNumber(value: normalKeyCount + (specialKeyCount + 1) / 2 as Int64))!
             return nil
         }
     }

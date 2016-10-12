@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15E33e" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
             <connections>
-                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="f6D-FN-Ci8"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -15,11 +15,18 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DailyKeyCount" customModuleProvider="target">
             <connections>
                 <outlet property="mainMenu" destination="U2V-fp-QDC" id="kVY-dy-wxk"/>
+                <outlet property="startAtLoginMenuItem" destination="ZOg-iM-rM9" id="OOW-fM-7SO"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="U2V-fp-QDC">
             <items>
+                <menuItem title="Start At Login" keyEquivalent="l" id="ZOg-iM-rM9">
+                    <connections>
+                        <action selector="startAtLoginClicked:" target="Voe-Tx-rLC" id="e47-vI-9FK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="fYy-7u-T91"/>
                 <menuItem title="Quit DailyKeyCount" keyEquivalent="q" id="6Eb-sP-16o">
                     <connections>
                         <action selector="quitApp:" target="Voe-Tx-rLC" id="cjF-LQ-gFY"/>
