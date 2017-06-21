@@ -5,7 +5,8 @@ A simple OS X app that counts keystrokes system-wide
 
 ### Download
 * [Download the app][app] - Version 0.1.1
-[app]: ./DailyKeyCount-0.1.1.app.zip?raw=true
+
+[app]: ./blob/master/DailyKeyCount-0.1.1.app.zip
 
 ### Usage
 __Note: You will need to add this app to the Accessbility whitelist to make it work properly.__
